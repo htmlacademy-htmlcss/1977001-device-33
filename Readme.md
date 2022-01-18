@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Елена Бокова](https://up.htmlacademy.ru/htmlcss/33/user/1977001).
-* Наставник: [Константин Антонов] (https://htmlacademy.ru/profile/rawle51).
+* Наставник: [Константин Антонов](https://htmlacademy.ru/profile/rawle51).
 
 ---
 
