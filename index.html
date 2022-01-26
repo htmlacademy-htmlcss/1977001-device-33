@@ -134,7 +134,7 @@
 
           </div>
 
-          <ol class="slider-pagination">
+          <ul class="slider-pagination">
             <li class="slider-pagination-item">
               <button class="slider-pagination-button slider-pagination-button-current" type="button">
                 <span class="visually-hidden">1 товар</span>
@@ -150,7 +150,7 @@
                 <span class="visually-hidden">3 товар</span>
               </button>
             </li>
-          </ol>
+          </ul>
 
         </section>
 
@@ -179,24 +179,19 @@
           </ul>
 
         </section>
-
+       
         <section class="slider-services">
           <h2 class="visually-hidden">Услуги</h2>
           <div class="slider-services-pages">
             <ol class="slider-services-pagination">
               <li class="slider-pagination-item">
-                <button class="button-pagination button-pagination-current">
-                  Доставка
-                </button>
+                <a class="button-pagination button-pagination-current">Доставка</a>
               </li>
               <li class="slider-pagination-item">
-                <button class="button-pagination">Гарантия
-                </button>
+                <a class="button-pagination">Гарантия</a>
               </li>
               <li class="slider-pagination-item">
-                <button class="button-pagination">
-                  Кредит
-                </button>
+                <a class="button-pagination">Кредит</a>
               </li>              
             </ol>
           </div>
@@ -219,8 +214,11 @@
         
         <a class="button-delivery">Доставим редкий товар под заказ</a>
 
-        <section class="about-us">
-          <h2>О нас</h2>
+        
+        <section class="about">
+          <h2 class="visually-hidden">Подробнее о нас </h2>
+         <div class="about-us">
+          <h3>О нас</h3>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
           <ul>
@@ -228,40 +226,49 @@
             <li>СДИК</li>
             <li>ТоксБерри</li>
           </ul>
-          <a class="button" href="#">Подробнее о нас</a>
-        </section>
+          <a class="button" href="#">Подробнее о нас</a>              
+        </div>
 
-        <section class="contacts">
-          <h2>Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис.Заодно сможете проверить работоспособность покупки. </p>
+         <div class="contacts">
+          <h3>Контакты</h3>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
 
-          <b>Интернет-магазин «Девайс»</b>
+          <h4>Интернет-магазин «Девайс»</h4>
           <address class="contacts">
             <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </address>
-          <b>Время работы</b>
+          <h4>Время работы</h4>
           <p>пн—пт: с 10:00 до 22:00 <br> сб—вс: с 10:00 до 19:00</p>
 
           <a class="button" href="#">Напишите нам</a>
-
+        </div>
         </section>
 
         <section class="subscription">
-          <h2>Подпишитесь на рассылку</h2>
-          <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, 
+          <div class="subscription-offer">
+            <h2>Подпишитесь на рассылку</h2>
+            <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, 
             распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+            </div>
 
+          <div class="subscription-form">
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="subscription-email">Email</label>
-              <input class="field" placeholder="Ваш email" type="email" name="subscription-email"
+              <input 
+              class="field" 
+              placeholder="Ваш email" 
+              type="email" 
+              name="subscription-email"
               id="subscription-email" required>
               <button class="button-subscription" type="submit">
-                <span>Подписаться</span>
+                Подписаться
               </button>
             </form>
 
             <p>Это бесплатно</p>
+
+          </div>
         </section>
 
       </main>
@@ -308,10 +315,8 @@
           </ul>  
         </div>
 
-        <div class="footer-phone">          
-          <address class="footer-contacts-phone">
-            <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </address>
+        <div class="footer-phone">         
+          <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>         
 
           <a href="https://htmlacademy.ru/">
             <img class="logo" src="" alt="Логотип HTML Academy.">
