@@ -43,11 +43,11 @@ body {
 }
 
 .page-header {
-  background-color: #ffe17f;
+  background-color: #FFE17F;
   color: #000000;
 }
 
-.header-part a{
+.header-part a {
   color: inherit;
   text-decoration: none;
 }
@@ -70,12 +70,12 @@ body {
   list-style: none;
 }
 
-.navigation-list a{
+.navigation-list a {
   text-transform: uppercase;
   text-decoration: none;
 }
 
-.log-in-active{
+.log-in-active {
   opacity: 0.3;
 }
 
@@ -109,7 +109,7 @@ body {
   font-weight: 400;
 }
 
-.categories-item{
+.categories-item {
   list-style: none;
   font-size: 18px;
   font-weight: 800;
@@ -117,19 +117,19 @@ body {
   color: #000000;
 }
 
-.categories-item a{
+.categories-item a {
   text-decoration: none;
 }
 
 .category-name {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   color: #000000;
   letter-spacing: -0.02em;
 }
 
 .main-title {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   font-weight: 800;
@@ -145,21 +145,21 @@ body {
   text-decoration: none;
   letter-spacing: 0.2em;
   text-align: center;
-  background-color:#ffe17f;
+  background-color:#FFE17F;
   border: none;
 }
 
-.slider-pagination-item{
+.slider-pagination-item {
   list-style: none;
 }
 
 .button-pagination {
-  width: 160px;
+  min-width: 160px;
   height: 20px;
 }
 
 .button-pagination-current {
-  color:#ffe17f;
+  color:#FFE17F;
   background-color: #000000;
 }
 
@@ -183,7 +183,7 @@ body {
   letter-spacing: 0.2em;
 }
 
-.shipping-company-list{
+.shipping-company-list {
   list-style: none;
   color: #000000;
   font-weight: 700;
@@ -195,10 +195,11 @@ body {
   font-weight: 700px;
 }
 
-.contacts{
+.contacts {
   color: inherit;
   font-style: normal;
 }
+
 .contacts-phone {
   color: #000000;
 }
@@ -220,19 +221,19 @@ body {
   margin-top: 0px;
 }
 
-.page-footer a{
+.page-footer a {
   color: inherit;
 }
 
-.footer-contacts{
+.footer-contacts {
   font-size: 16px;
 }
 
-.breadcrumbs{
+.breadcrumbs {
   list-style: none;
 }
 
-.breadcrumbs-item{
+.breadcrumbs-item {
   display: inline;
 }
 
@@ -250,7 +251,7 @@ body {
   background-color: #FFFFFF;
 }
 
-.filter-title{
+.filter-title {
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -267,7 +268,7 @@ body {
   font-size: 16px;
 }
 
-.product-card{
+.product-card {
   list-style: none;
 }
 
@@ -288,7 +289,6 @@ body {
   text-align: center;
 }
 
-
 .pagination-show-more {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -308,7 +308,7 @@ body {
 .prev-next {
   color:#000000;
   background: transparent;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   letter-spacing: 3px;
   text-transform: uppercase;
