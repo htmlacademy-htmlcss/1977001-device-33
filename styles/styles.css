@@ -36,14 +36,14 @@ html {
 
 body {
   margin: 0;
-  margin-top: 27px;
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #444444;
 }
 
@@ -87,25 +87,24 @@ body {
 
 
 .button:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 0;
 }
 
 .button:not(.button-pagination-current, .button-subscription):hover {
   background-image: none;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   outline: none;
 }
 
 .button:not(.button-pagination-current, .button-subscription):active {
   background-image: none;
-  background-color: #FFCC33;
+  background-color: #ffcc33;
   outline: none;
 }
 
 .button:disabled {
   opacity: 0.3;
-
 }
 
 .button:disabled:hover {
@@ -117,15 +116,15 @@ body {
 .page-header {
   width: 1040px;
   margin: 0 auto;
-  padding: 0 60px 12px 60px;
-  background-color: #FFE17F;
+  padding: 0 60px 15px 60px;
+  background: linear-gradient(to bottom, transparent 0 10%, #ffe17f 10% 100%);
   color: #000000;
 }
 
 .header-part {
   display: flex;
   align-items: baseline;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .header-part a {
@@ -136,8 +135,7 @@ body {
 .header-logo {
   display: block;
   width: 145px;
-  margin-bottom: 21px;
-  margin-top: -25px;
+  margin-bottom: 22px;
 }
 
 .logo:hover {
@@ -149,22 +147,22 @@ body {
 }
 
 .logo:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 /* SEARCH FORM */
 
 .search-form {
-  display: flex;
-  width: 517px;
-  height: 41px;
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 40px;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
 }
 
 .search-text {
   background-color: transparent;
-  background-image: url(/images/icon-search.svg);
+  background-image: url("../images/icon-search.svg");
   background-repeat: no-repeat;
   background-position: left;
   background-position-x: 16px;
@@ -189,7 +187,7 @@ body {
 }
 
 .search-button:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   background: #000000;
   border-radius: 0 50px 50px 0;
   outline: none;
@@ -208,7 +206,7 @@ body {
 }
 
 .search-text:focus, .search-button:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -251,28 +249,7 @@ body {
   position: relative;
   display: block;
   letter-spacing: 0.2em;
-  max-width: 293px;
   padding: 15px 0;
-}
-
-.log-in-a:hover,
-.navigation-user-link:hover,
-.navigation-link:hover {
-  opacity: 0.6;
-}
-
-.log-in-a:focus,
-.navigation-user-link:focus,
-.navigation-link:focus {
-  outline: 2px solid #AF4FFF;
-  outline-offset: 2px;
-}
-
-.log-in-a:active,
-.navigation-user-link:active,
-.navigation-link:active {
-  opacity: 0.3;
-  outline: none;
 }
 
 .navigation-link-current::before {
@@ -288,10 +265,11 @@ body {
 .navigation-link-catalog {
   display: flex;
   align-items: center;
+  max-width: 500px;
   }
 
 .navigation-link-catalog::after {
-  content: url(/images/icon-plus.svg);
+  content: url("../images/icon-plus.svg");
   opacity: 0.3;
   padding-left: 15px;
 }
@@ -301,7 +279,7 @@ body {
 }
 
 .navigation-link-catalog:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -322,19 +300,43 @@ body {
 
 .log-in {
   margin-left: 26px;
+}
+
+.log-in-a {
+  padding-right: 28px;
   max-width: 230px;
 }
 
 .log-in-a::before {
-  content: url(/images/icon-login.svg);
+  content: url("../images/icon-login.svg");
   padding-right: 13px;
 }
 
 .log-in-active {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  max-width: 230px;
 }
+
+.log-in-a:hover,
+.navigation-user-link:hover,
+.navigation-link:hover {
+  opacity: 0.6;
+}
+
+.log-in-a:focus,
+.navigation-user-link:focus,
+.navigation-link:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.log-in-a:active,
+.navigation-user-link:active,
+.navigation-link:active {
+  opacity: 0.3;
+  outline: none;
+}
+
 
 .log-out {
   opacity: 0.3;
@@ -342,12 +344,12 @@ body {
 }
 
 .compare::before {
-  content: url(/images/icon-compare.svg);
+  content: url("../images/icon-compare.svg");
   padding-right: 12px;
 }
 
 .cart::before {
-  content: url(/images/icon-cart.svg);
+  content: url("../images/icon-cart.svg");
   padding-right: 12px;
 }
 
@@ -366,7 +368,7 @@ body {
   margin-bottom: 68px;
 }
 
-.slider-counter{
+.slider-counter {
 position: absolute;
 width: inherit;
 z-index: -1;
@@ -375,8 +377,8 @@ z-index: -1;
 .slider-item-number {
   font-weight: 700;
   font-size: 180px;
-  color: #FFFFFF;
-  background-color: #FFE17F;
+  color: #ffffff;
+  background-color: #ffe17f;
   text-align: right;
   padding-right: 49px;
   margin: 0;
@@ -473,7 +475,7 @@ z-index: -1;
 /* CATEGORIES */
 
 .categories {
-  margin-bottom: 165px;
+  margin-bottom: 65px;
 }
 
 .categories-list {
@@ -484,7 +486,7 @@ z-index: -1;
 }
 
 .categories-item:hover::before {
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
 .categories-button:active {
@@ -492,7 +494,7 @@ z-index: -1;
 }
 
 .categories-button:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -512,34 +514,34 @@ z-index: -1;
   content: "";
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   height: 160px;
   margin: 0 auto;
 }
 
 .virtual-reality::before {
-  background-image: url(/images/categories/categories-virtual-reality.svg);
+  background-image: url("../images/categories/categories-virtual-reality.svg");
 }
 
 .monopods::before {
-  background-image: url(/images/categories/categories-monopods.svg);
+  background-image: url("../images/categories/categories-monopods.svg");
   background-position: center bottom;
 }
 
 .action-cameras::before {
-  background-image: url(/images/categories/categories-action-cameras.svg);
+  background-image: url("../images/categories/categories-action-cameras.svg");
 }
 
 .fitness-bracelets::before {
-  background-image: url(/images/categories/categories-fitness-bracelets.svg);
+  background-image: url("../images/categories/categories-fitness-bracelets.svg");
 }
 
 .smart-watches::before {
-  background-image: url(/images/categories/categories-smart-watches.svg);
+  background-image: url("../images/categories/categories-smart-watches.svg");
 }
 
 .quadrocopters::before {
-  background-image: url(/images/categories/categories-quadrocopters.svg);
+  background-image: url("../images/categories/categories-quadrocopters.svg");
 }
 
 .category-name {
@@ -562,7 +564,7 @@ z-index: -1;
 
 .button-pagination-current {
   background-image: none;
-  color:#FFE17F;
+  color:#ffe17f;
   background-color: #000000;
   width: 100%;
   text-align: start;
@@ -570,7 +572,7 @@ z-index: -1;
 }
 
 button-pagination-current:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -583,7 +585,7 @@ button-pagination-current:focus {
 }
 
 .slider-services {
-  background-color: #F0F0F0;
+  background: linear-gradient(to bottom, transparent 0 20%, #F0F0F0 20% 100%);
   padding-bottom: 72px;
 }
 
@@ -596,7 +598,7 @@ button-pagination-current:focus {
   padding-left: 0;
   padding-top: 64px;
   padding-bottom: 30px;
-  margin: -100px 116px 0 0;
+  margin: 0 116px 0 0;
   position: relative;
   border-right: 7px solid #000000;
   list-style-type: none;
@@ -606,7 +608,6 @@ button-pagination-current:focus {
   list-style-type: none;
   max-width: 694px;
   margin: 0;
-  margin-top: -100px;
   padding: 0;
   padding-top: 72px;
 }
@@ -628,7 +629,7 @@ button-pagination-current:focus {
 .slider-services-delivery::after {
   content: "";
   display: block;
-  background-image: url(/images/services-delivery.svg);
+  background-image: url("../images/services-delivery.svg");
   background-repeat: no-repeat;
   width: 136px;
   height: 164px;
@@ -646,25 +647,27 @@ button-pagination-current:focus {
   margin: 70px auto;
   border: none;
   color: #000000;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .delivery {
   margin: 0 auto;
   padding-top: 5px;
+  max-width: 800px;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 800;
   letter-spacing: 0.2em;
+  text-align: center;
 }
 
 .button-delivery::before {
   content: "";
   width: 124px;
   height: 100px;
-  background-color:#FFE17F;
-  background-image: url(/images/icon-delivery.svg);
+  background-color: #ffe17f;
+  background-image: url("../images/icon-delivery.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -673,17 +676,17 @@ button-pagination-current:focus {
   content: "";
   width: 40px;
   height: 40px;
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
   opacity: 0.5;
   border-radius: 50px;
   margin: 30px 42px;
-  background-image: url(/images/icon-info.svg);
+  background-image: url("../images/icon-info.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .button-delivery:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .button-delivery:active {
@@ -696,13 +699,12 @@ button-pagination-current:focus {
 }
 
 .button-delivery:hover::before {
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
 .button-delivery:hover::after {
-  background-image: url(/images/icon-info-hover.svg);
+  background-image: url("../images/icon-info-hover.svg");
 }
-
 
 .about {
   margin-bottom: 70px;
@@ -761,7 +763,7 @@ button-pagination-current:focus {
   position: absolute;
   width: 8px;
   height: 8px;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   background-position: left center;
   border-radius: 50px;
   left: 0;
@@ -800,7 +802,7 @@ button-pagination-current:focus {
 }
 
 .subscription {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   padding-bottom: 57px;
 }
 
@@ -850,11 +852,11 @@ button-pagination-current:focus {
 }
 
 .subscription-field:invalid:placeholder-shown {
-  border-bottom: 1px solid #CECECE;
+  border-bottom: 1px solid #cecece;
 }
 
 .subscription-field:focus{
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
   outline: none;
 }
 
@@ -871,7 +873,7 @@ button-pagination-current:focus {
 }
 
 .button-subscription:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 .button-subscription:hover {
@@ -884,7 +886,7 @@ button-pagination-current:focus {
 }
 
 .free::before {
-  content: url(/images/icon-success.svg);
+  content: url("../images/icon-success.svg");
   width: 16px;
   height: 16px;
   margin: 0 15px 0 0;
@@ -895,7 +897,7 @@ button-pagination-current:focus {
 
 .page-footer {
   background-color: #444444;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 61px 0;
 }
 
@@ -932,19 +934,19 @@ button-pagination-current:focus {
 }
 
 .footer-phone:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
 .footer-phone:hover {
   opacity: 1;
-  color: #FFC700;
+  color: #ffc700;
 }
 
 .footer-phone:active {
   outline: none;
   opacity: 0.3;
-  color: #FFC700;
+  color: #ffc700;
 }
 
 .yellow-line {
@@ -956,7 +958,7 @@ button-pagination-current:focus {
   display: block;
   width: 80px;
   height: 7px;
-  background-color: #FFC500;
+  background-color: #ffc500;
   background-position: right center;
   position: relative;
   top: 17px;
@@ -997,12 +999,12 @@ button-pagination-current:focus {
 }
 
 .footer-social-button:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
 .footer-social-button:hover {
-  background-color: #FFC700;
+  background-color: #ffc700;
   opacity: 1;
   outline: none;
 }
@@ -1029,16 +1031,16 @@ button-pagination-current:focus {
 }
 
 .logo-academy:hover .logo-academy-icon {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .logo-academy:active .logo-academy-icon {
-  fill: #FFFFFF;
+  fill: #ffffff;
   opacity: 0.3;
 }
 
 .logo-academy:focus {
-  outline: 1px solid #AF4FFF;
+  outline: 1px solid #af4fff;
   outline-offset: 0;
 }
 
@@ -1057,13 +1059,13 @@ button-pagination-current:focus {
 }
 
 .navigation-link-footer:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
 .navigation-link-footer:hover {
   opacity: 1;
-  color: #FFC700;
+  color: #ffc700;
   text-decoration: underline;
   text-underline-offset: 7px;
 }
@@ -1072,13 +1074,10 @@ button-pagination-current:focus {
 .navigation-link-footer:active {
   outline: none;
   opacity: 0.3;
-  color: #FFC700;
+  color: #ffc700;
   text-decoration: underline;
   text-underline-offset: 7px;
 }
-
-
-
 
 
 /* PAGE 2. CATALOG */
@@ -1086,7 +1085,7 @@ button-pagination-current:focus {
 .catalog-title-container {
   width: 1100px;
   padding-left: 60px;
-  margin: 35px auto;
+  margin: 38px auto;
 }
 
 .catalog-title {
@@ -1127,10 +1126,13 @@ button-pagination-current:focus {
   padding-right: 40px;
 }
 
-.sort .button {
+.button-up, .button-down {
+  display: inline-block;
   width: 30px;
   height: 30px;
-  background-color: transparent;
+  background-image: url("../images/icon-sort-up.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .catalog-products {
@@ -1167,7 +1169,7 @@ button-pagination-current:focus {
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  margin-right: 190px;
+  margin-right: auto;
 }
 
 .select-control {
@@ -1221,7 +1223,7 @@ button-pagination-current:focus {
   align-items: center;
   justify-content: space-between;
   padding: 25px;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   width: 710px;
   height: 21px;
   margin: 0 auto;
@@ -1232,7 +1234,7 @@ button-pagination-current:focus {
   font-size: 16px;
   text-transform: uppercase;
   background-color: transparent;
-  border: 3px solid #E5E5E5;
+  border: 3px solid #e5e5e5;
   letter-spacing: 3px;
   min-width: 760px;
   height: 55px;
