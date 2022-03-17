@@ -1552,8 +1552,14 @@ button-pagination-current:focus {
   position: relative;
 }
 
+.number-group {
+  position: relative;
+}
+
 .number-info-button {
   position: absolute;
+  right: 32px;
+  top: -6px;
   width: 26px;
   height: 26px;
   margin-left: 11px;
