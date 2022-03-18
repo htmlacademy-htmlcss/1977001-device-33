@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Device. Интернет-магазин гаджетов</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
 </head>
 
 <body>
@@ -28,8 +29,9 @@
 
       <div class="navigation-user">
         <a class="navigation-user-link compare" href="#">Сравнить</a>
-        <a class="navigation-user-link cart" href="#">Корзина</a>
-
+        <a class="navigation-user-link cart" href="#">
+          <span class="cart-counter">2</span>
+          Корзина</a>
         <div class="popover popover-cart">
 
           <div class="popover-content">
@@ -284,39 +286,51 @@
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="categories-list">
 
-          <li class="categories-item virtual-reality">
+          <li>
             <a class="categories-button" href="#">
-              <h3 class="category-name">Виртуальная реальность</h3>
+              <div class="categories-item virtual-reality">
+                <h3 class="category-name">Виртуальная реальность</h3>
+              </div>
             </a>
           </li>
 
-          <li class="categories-item monopods">
+          <li>
             <a class="categories-button" href="monopods.html">
-              <h3 class="category-name">Моноподы<br> для селфи</h3>
+              <div class="categories-item monopods">
+                <h3 class="category-name">Моноподы<br> для селфи</h3>
+              </div>
             </a>
           </li>
 
-          <li class="categories-item action-cameras">
+          <li>
             <a class="categories-button" href="#">
-              <h3 class="category-name">Экшн-камеры</h3>
+              <div class="categories-item action-cameras">
+                <h3 class="category-name">Экшн-камеры</h3>
+              </div>
             </a>
           </li>
 
-          <li class="categories-item fitness-bracelets">
+          <li>
             <a class="categories-button" href="#">
-              <h3 class="category-name">Фитнес-браслеты</h3>
+              <div class="categories-item fitness-bracelets">
+                <h3 class="category-name">Фитнес-браслеты</h3>
+              </div>
             </a>
           </li>
 
-          <li class="categories-item smart-watches">
+          <li>
             <a class="categories-button" href="#">
-              <h3 class="category-name">Умные часы</h3>
+              <div class="categories-item smart-watches">
+                <h3 class="category-name">Умные часы</h3>
+              </div>
             </a>
           </li>
 
-          <li class="categories-item quadrocopters">
+          <li>
             <a class="categories-button" href="#">
-              <h3 class="category-name">Квадрокоптеры</h3>
+              <div class="categories-item quadrocopters">
+                <h3 class="category-name">Квадрокоптеры</h3>
+              </div>
             </a>
           </li>
 
@@ -508,8 +522,7 @@
 
     </div>
   </footer>
-  <div class="modal-container">
-    <!-- modal-closed -->
+  <div class="modal-container modal-closed">
     <div class="modal modal-delivery">
       <button class="modal-close-button">
         <span class="visually-hidden">Закрыть</span>
