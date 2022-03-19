@@ -272,12 +272,13 @@ img {
   display: flex;
   align-items: center;
   max-width: 500px;
-}
+ }
 
 .navigation-link-catalog::after {
   content: url("../images/icon-plus.svg");
   opacity: 0.3;
   padding-left: 15px;
+  z-index: 2;
 }
 
 .navigation-link-catalog:hover::after {
@@ -410,15 +411,29 @@ img {
 }
 
 .catalog-list li {
-  padding-bottom: 7px;
+  padding-top: 7px;
+  padding-bottom: 11px;
 }
 
 .catalog-navigation {
-  display: none;
+  display: block;
+  position: absolute;
+  background-color: #ffe17f;
+  left: -60px;
+  right: -60px;
+  top: 60px;
+  padding: 0 60px 19px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 18px;
+  letter-spacing: normal;
+  z-index: 1;
 }
 
-.catalog-navigation-opened {
-  display: block;
+.catalog-navigation-closed {
+  display: none;
 }
 
 .catalog-navigation-link {
