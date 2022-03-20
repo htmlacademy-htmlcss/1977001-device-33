@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Device. Интернет-магазин гаджетов</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
         <div class="popover popover-cart">
 
           <div class="popover-content">
-            <h2 class="visually-hidden">Корзина</h2>
+            <span class="visually-hidden">Корзина</span>
 
             <ul class="cart-items-list">
               <li class="cart-item">
@@ -89,7 +89,6 @@
     </div>
 
     <nav class="navigation">
-
       <div>
         <a class="navigation-link-catalog" href="#">Каталог товаров</a>
 
@@ -525,6 +524,7 @@
 
     </div>
   </footer>
+
   <div class="modal-container modal-closed">
     <div class="modal modal-delivery">
       <button class="modal-close-button">
@@ -541,9 +541,9 @@
           </p>
           <p class="field-group email-group">
             <label class="delivery-label delivery-email-label" for="delivery-email">Ваш e-mail:</label>
-            <input class="email-form-field field" type="email" id="delivery-email" name="delivery-email"
-              placeholder="почта">
-            <span class="email-message">Забавный у вас адрес</span>
+            <input class="email-form-field field invalid-demonstration" type="email" id="delivery-email"
+              name="delivery-email" placeholder="почта">
+            <span class="field-message">Забавный у вас адрес</span>
           </p>
           <p class="field-group delivery-group">
             <label class="delivery-label delivery-product-label" for="delivery-product">Что нужно привезти:</label>
